@@ -1,0 +1,115 @@
+body{
+    background: #e7e7e7;
+    font-family: monospace;
+    margin: auto;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+    padding: 1px 25px 1px 25px;
+    font-weight: 900;
+    border: 6px solid #80604d;
+    border-radius: 30px 0px;
+    width: fit-content;
+}
+
+button{
+    border: none;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+#prochainClient{
+    background:	rgb(152,251,152);
+    padding: 10px 25px 10px 25px;
+}
+
+#client{
+    text-decoration: underline;
+}
+
+p{
+    font-weight: bold;
+}
+
+#stat{
+    color: black;
+}
+
+#tirroir{
+    color: white;
+    background-color: magenta;
+    padding: 10px;
+}
+
+#tirroir:hover{
+    background-color: black;
+}
+
+#coins{
+    border: 1.5px solid black;
+    width: fit-content;
+    padding: 1%;
+    display: grid;
+    grid-gap: 5px;
+    margin-top: 1%;
+    display: none;
+}
+
+#coins button{
+    margin-bottom: 10px;
+}
+
+#coins button:hover{
+    background-color: black;
+}
+
+#coins #first-row{
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+#first-row button{
+    background-color: #800020;
+    padding: 10px 25px 10px 25px;
+    color: white;
+}
+
+#coins #second-row{
+    grid-template-columns: repeat(5, 10px);
+    text-align: center;
+}
+
+#second-row button{
+    background-color: #800020;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 58px;
+    height: 50px;
+}
+
+#rendre{
+    color: white;
+    background-color: magenta;
+    padding: 10px;
+    justify-self: start;
+}
+
+footer{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #coins{
+        display: flex;
+    }
+
+    #coins button{
+        margin-bottom: 10px;
+    }
+}

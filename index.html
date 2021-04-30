@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendez la monnaie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1> <span id="adjust">Rendez La Monnaie !</span></h1>
+        </div>
+        <button id="prochainClient">Servir le prochain client</button>
+        
+        <p id="client">Client: <span id="client_num"></span> (Raté: <span id="rate_num"></span>) </p>
+        <p id="total">Total dû: <span id="total_num"></span> </p>
+        <p id="paye">Payé: <span id="paye_num"></span> </p>
+        <p id="statut">Statut: <span id="stat"></span></p>
+
+        <button id="tirroir">Ouvrir le tiroir caisse</button>
+
+        <div id="coins">
+            <div id="first-row">
+                <button id="vingt" >20</button>
+                <button id="dix" >10</button>
+                <button id="cinq" >5</button>
+            </div>
+            
+            <div id="second-row">
+                <button id="deux" >2</button>
+                <button id="un">1</button>
+                <button id="cinquante" >0.50</button>
+                <button id="vingt_vingt">0.20</button>
+                <button id="dix_dix" >0.10</button>
+            </div>
+            <p>Monnaie: <span id="monnaie">0</span></p>
+
+            <button id="rendre">Rendre la monnaie</button>
+        </div>
+
+        <footer>
+            <h4>Projet "rendez la monnaie" - PW1 201920 Printemps</h4>
+        </footer>
+    </div>
+</body>
+</html>
